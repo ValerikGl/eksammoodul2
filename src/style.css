@@ -1,4 +1,3 @@
-html, body {
-  background-color: DarkSeaGreen;
-
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
