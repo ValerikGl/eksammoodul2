@@ -7,11 +7,9 @@
     <title>eksammoodul2</title>
   </head>
   <body>
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about.html">About</a></li>
-    </ul>
-    <h1>Welcome to eksammoodul2</h1>
+    {% include './nav.njk' %}
+    {% block content %}
+    {% endblock %}
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
