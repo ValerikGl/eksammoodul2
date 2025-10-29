@@ -1,16 +1,18 @@
-<section class="relative py-20 text-white overflow-hidden">
-  <div class="absolute inset-0 bg-cover bg-center brightness-50" style="background-image: url('/background.gif');"></div>
-
-  <div class="relative z-10">
-    <h2 class="text-center text-3xl md:text-5xl font-primary mb-12">
-      Games we play
-    </h2>
-
-    <div class="flex flex-wrap justify-center items-center gap-12 px-6 md:px-20">
-      <img src="/games/image 1.webp" alt="" class="w-60 h-60 object-contain">
-      <img src="/games/image 2.webp" alt="" class="w-60 h-60 object-contain">
-      <img src="/games/image 3.webp" alt="" class="w-60 h-60 object-contain">
-      <img src="/games/image 4.webp" alt="s" class="w-60 h-60 object-contain">
-    </div>
-  </div>
-</section>
+{% block content %}
+    <section class="relative py-20 text-white overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center brightness-50" style="background-image: url('/background.gif');"></div>
+        <div class="relative z-10">
+            <h2 class="text-center text-3xl md:text-5xl font-primary mb-12">
+                Games we play
+            </h2>
+            <div class="flex flex-wrap justify-center items-center gap-12 px-6 md:px-20">
+                <img src="/games/image 1.webp" alt="" class="w-60 h-60 object-contain">
+                <img src="/games/image 2.webp" alt="" class="w-60 h-60 object-contain">
+                <img src="/games/image 3.webp" alt="" class="w-60 h-60 object-contain">
+                <img src="/games/image 4.webp" alt="s" class="w-60 h-60 object-contain">
+            </div>
+            {% include 'partials/matches.njk' %}
+            {% include 'partials/merch.njk' %}
+        </div>
+    </section>
+{% endblock %}
