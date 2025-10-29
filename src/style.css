@@ -17,10 +17,21 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Komikazoom';
+    src: url('Komikazoom.woff2') format('woff2'),
+        url('Komikazoom.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 
 
 @theme {
   --color-primary: #9900CC; 
   --color-secondary: #D699EB; 
   --font-primary: "Kenyan Coffee Rg";
+  --font-secondary: "Komikazoom";
 }
